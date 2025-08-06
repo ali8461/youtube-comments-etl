@@ -3,7 +3,11 @@
 This project builds a scalable ETL (Extract, Transform, Load) pipeline to collect comments from YouTube videos using the YouTube Data API. The pipeline is orchestrated using Apache Airflow and deployed on an AWS EC2 instance. The final output — a cleansed dataset of YouTube comments — is stored in an Amazon S3 bucket.
 
 ---
+### Architecture Diagram
 
+![ETL Architecture](assets/youtube_etl_architecture.png)
+
+---
 ## 📌 Project Overview
 
 This ETL pipeline:
@@ -22,10 +26,6 @@ The high-level architecture of this pipeline is:
 
 - The process is fully **orchestrated by Apache Airflow**, running on an EC2 instance.
 - Data is extracted from YouTube using Python, transformed into a DataFrame using Pandas, and then uploaded as a CSV file to Amazon S3.
-
-### Architecture Diagram
-
-![ETL Architecture](assets/youtube_etl_architecture.png)
 
 ---
 
